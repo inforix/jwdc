@@ -1,7 +1,7 @@
 module.exports = {
   "findUsersUrl" : process.env.FIND_USERS_URL,
   "getUserUrl": process.env.GET_USER_URL,
-  // 获取随申码背后的脱敏信息
+  // 健康状态信息
   "health": {
     "url": process.env.HEALTH_URL || "https://apigw.shec.edu.cn/gateway/interface-sj-ssmjm/getInfo",
     "authoritytype": 2,
@@ -14,7 +14,7 @@ module.exports = {
     "appSecret": process.env.APP_SECRET
   },
   
-  // 健康码信息
+  // 获取随申码背后的脱敏信息
   "jkm" : {
     "url": process.env.JKM_URL || "https://apigw.shec.edu.cn/gateway/interface-sj-jkmjk/getInfo",
     "authoritytype": 2,
