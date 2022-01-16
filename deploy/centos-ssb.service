@@ -1,0 +1,14 @@
+[Unit]
+Description=SuiShenBan Service
+Documentation=https://api.example.com
+After=network.target
+
+[Service]
+Environment=PORT=80
+WorkingDirectory=/opt/jwdc
+Type=simple
+ExecStart=/usr/local/bin/node /opt/jwdc/bin/www
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
