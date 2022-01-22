@@ -1,5 +1,7 @@
 # 数据目录API二次封装
 
+[TOC]
+
 ## 说明
 
 本代码为各学校对市大数据中心教委团队提供的数据目录进行二次封装的事例。
@@ -12,9 +14,9 @@
 
 ### 安装Node.js
 
-#### 下载 Node.js 长期支持版。
+#### 下载 Node.js 长期支持版
 
-从官网（https://nodejs.org/en/download/）上下载Linux Binaries(x64)版本，然后解压。
+从官网（ https://nodejs.org/en/download/ ）上下载Linux Binaries (x64)版本，然后解压。
 
 ```bash
 tar -xJvf node-v16.13.2.tar.xz -C /usr/local/
@@ -38,7 +40,9 @@ cd /opt/jwdc
 npm i
 ```
 
-#### 修改 `deploy/centos-ssb.service`中的环境变量。
+#### 修改服务中的环境变量
+
+修改 `deploy/centos-ssb.service`中的环境变量。
 
 变量 | 必须设置 | 说明
 -- | -- | ----
